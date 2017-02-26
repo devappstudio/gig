@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GiGSHiP</title>
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<!--Mian header-->
+	<header class="main-header clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="/" class="link logo-link">
+						<img src="images/logo.png" alt="GiGSHiP">
+					</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<!--Seacrh Form (using q for query  field name)-->
+					<div class="top-search-wraper">
+						<form action="" class="top-search-form text-left">
+							<input type="hidden" name="source" value="top-bar">
+							<input type="text" name="q" class="input search-input inline" placeholder="Search for Gigs here">
+							<input type="submit" value="" hidden="" id="top-submit">
+							<label for="top-submit" class="search-label">&raquo;</label>
+						</form>
+					</div>
+					<!--End Search form-->
+				</div>
+				<div class="col-md-6 text-right">
+					<nav class="header-nav">
+						<ul class="nav-ul">
+							<li class="nav-li"><a href="" class="nav-link">Home</a></li>
+							<li class="nav-li"><a href="" class="nav-link">Blog</a></li>
+							<!-- Changes to user name and profile/acount link if logged in or redirect to login or create account-->
+							<li class="nav-li"><a href="" class="nav-link">Signup</a></li>
+							<!--Changes to logout if user is logged in *will submit logo later-->
+							<li class="nav-li"><a href="" class="nav-link">Sign in</a></li>
+							<li class="nav-li"><a href="" class="nav-link btn btn-small btn-primary">Sell A Gig</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--End Main Header-->
+	<!--Main navigation -->
+	<nav class="main-nav clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="nav-ul">
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">Home</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Gigs</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Request</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Categories</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Locations</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--End Main navigation-->
+	
+	<!-- Main Section -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<!--New gig or edit Gig form -->
+				<div class=" content-wraper">
+					<h2 class="ptitle">New GiG</h2>
+					<div class="the-content border-wraper">
+						<form action="" class="new-gig" enctype="multipart-form">
+							<div class="sec-one">
+								<table class="">
+									<tr>
+										<td>Title</td>
+										<td class="input-wraper">
+											<input type="text" name="title" class="text-input title" id="title" placeholder="I will..." pattern ="[A-Z a-z0-9]+" required="" maxlength="50">
+											<br>
+											<small>Maximum of 50 alpha-numeric characters, must begin with "I will"</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Price</td>
+										<td class="input-wraper">
+											<select  name="price" class="select-input price" id="price" required="">
+												<option value="1">$1</option>
+												<option value="2">$2</option>
+												<option value="3">$3</option>
+												<option value="4">$4</option>
+												<option value="5">$5</option>
+											</select>
+											<br>
+											<small>Price per hour or per job</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Category</td>
+										<td class="input-wraper">
+											<select  name="category" class="select-input category" id="category" required="">
+												<option value="">Please select</option>
+												<option value="1">IT/ Technology</option>
+												<option value="2">Sawing</option>
+												<option value="3">Banking</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Sub Category</td>
+										<td class="input-wraper">
+											<select  name="sub_category" class="select-input sub_category" id="sub_category" required="">
+												<option value="">Please select</option>
+												<option value="1">Web Design</option>
+												<option value="2">Graphics Design</option>
+												<option value="3">Animation</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>Description</td>
+										<td class="input-wraper">
+											<textarea  name="des" class="textarea-input des" id="des" rows="5" ></textarea>
+											<br>
+											<small>Shoul best describe your product or service. <strong>Must not contain your contact information.</strong></small>
+										</td>
+									</tr>
+									<tr>
+										<td>Tags</td>
+										<td class="input-wraper">
+											<input type="text" name="tags" class="text-input tags" id="tags" >
+											<br>
+											<small>Separate multiple with a coma.</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Shipping</td>
+										<td class="input-wraper">
+											<input type="text" name="shipping" class="text-input shipping" id="shipping"  pattern ="[0-9]+" >
+											<br>
+											<small>If applicable, amount in USD.</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Days to Delivery</td>
+										<td class="input-wraper">
+											<input type="text" name="delivery" class="text-input delivery" id="delivery" pattern ="[0-9]+"  >
+											<br>
+											<small>If applicable</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Instant Delivery</td>
+										<td class="input-wraper">
+											<input type="file" name="ins_delivery" class="file-input ins_delivery" id="ins_delivery" >
+											<br>
+											<small>Upload already made GiGs, .zip files only</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Images</td>
+										<td class="input-wraper">
+											<input type="file" name="image[]" class="file-input image" id="image" accept="image/*" multiple="" >
+											<br>
+											<small>Select images of your product or service, multiple selection available</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Video</td>
+										<td class="input-wraper">
+											<input type="url" name="image" class="text-input video" id="video" >
+											<br>
+											<small>Youtube video link</small>
+										</td>
+									</tr>
+									<tr>
+										<td>Promote GiG</td>
+										<td class="input-wraper">
+											<label for="promote">
+												<input type="checkbox" name="promote" class="check-input promote" id="promote" >  Promote GiG for only $3 for 10 day. <strong>We will help you reach potential customers by recommending your GiG in listing.</strong>
+											</label>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<hr>
+							<p >
+								<input type="checkbox" name="terms" class=" terms" id="terms" >  Please <a href="">read</a> and accept or Terms and Conditions before you publish.</strong>
+							</p>
+							<hr>
+							<button class="btn btn-primary btn-big">PUBLISH</button>
+						</form>
+					</div>
+				</div>
+				<!-- New gig or edit Gig form -->
+
+			</div>
+			
+
+			<!-- bottom navigation -->
+			<div class="bottom-nav">
+				<div class="col-md-12">
+					<!--Here-->
+				</div>
+			</div>
+			<!-- end bottom navigation -->
+		</div>
+	</div>
+	<!-- End Main Section -->
+
+	<!--footer content -->
+	<footer class="footer-wraper">
+		<div class="container">
+			<div class="row">
+				<!--footer here -->
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

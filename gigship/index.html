@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GiGSHiP</title>
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<!--Mian header-->
+	<header class="main-header clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="/" class="link logo-link">
+						<img src="images/logo.png" alt="GiGSHiP">
+					</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<!--Seacrh Form (using q for query  field name)-->
+					<div class="top-search-wraper">
+						<form action="" class="top-search-form text-left">
+							<input type="hidden" name="source" value="top-bar">
+							<input type="text" name="q" class="input search-input inline" placeholder="Search for Gigs here">
+							<input type="submit" value="" hidden="" id="top-submit">
+							<label for="top-submit" class="search-label">&raquo;</label>
+						</form>
+					</div>
+					<!--End Search form-->
+				</div>
+				<div class="col-md-6 text-right">
+					<nav class="header-nav">
+						<ul class="nav-ul">
+							<li class="nav-li"><a href="" class="nav-link">Home</a></li>
+							<li class="nav-li"><a href="" class="nav-link">Blog</a></li>
+							<!-- Changes to user name and profile/acount link if logged in or redirect to login or create account-->
+							<li class="nav-li"><a href="" class="nav-link">Signup</a></li>
+							<!--Changes to logout if user is logged in *will submit logo later-->
+							<li class="nav-li"><a href="" class="nav-link">Sign in</a></li>
+							<li class="nav-li"><a href="" class="nav-link btn btn-small btn-primary">Sell A Gig</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--End Main Header-->
+	<!--Main navigation -->
+	<nav class="main-nav clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="nav-ul">
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">Home</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Gigs</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Request</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Categories</a></li>
+						<li class="nav-li"><a href="" class="nav-link main-nav-link">All Locations</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--End Main navigation-->
+
+	<!-- Hero Area - Propaaosing parralex background with scroll effect over slideshow or ?-->
+	<div class="hero-wraper clearfix">
+		<div class="hero">
+			<div class="hero-text">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="text-center intro-msg">
+								<h1>Welcome To GiGSHiP</h1>
+								<h3>Turn Your Skill Into Cash</h3>
+								<span class="or-with-bars">OR</span>
+								<h3>Get Job Done By Freelancers</h3>
+							</div>
+								
+							<!-- Search form for Hero-->
+							<div class="hero-search-wraper text-center">
+								<form action="" class="hero-search-form">
+									<input type="hidden" name="source" value="hero">
+									<input type="text" name="q" class="input search-input" placeholder="Search for gigs here">
+									<label for="hero-submit" class="search-label">&raquo;</label>
+									<input type="submit" hidden="" id="hero-submit">
+								</form>
+							</div>
+							<!-- End search form for hero-->
+							<div class="hero-buttons text-center">
+								<div class="row">
+									<div class="col-md-3 col-md-offset-3">
+										<a href="" class="btn btn-primary">JOIN (100% FREE)</a>
+									</div>
+									<div class="col-md-3"><a href="" class="btn btn-primary">LOGIN (100% EASY)</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Hero Area-->
+	
+	<!-- Main Section -->
+	<div class="container">
+		<div class="row">
+			<!--home job post *this can be taken away and the template for job entry used to display generic jobs line on search and filter pages-->
+			<div class="col-md-12">
+				<section class="home-job clearfix">
+					<div class="text-center">
+						<h2>What Will You Do For $5 Or Less?</h2>
+						<form action="" class="home-job-form">
+							<span class="inline bold">Start with "I will"</span>
+							<input type="text" name="job-title" class="inline text-input" placeholder="I will ...">
+							<span class="inline bold">for</span>
+							<select name="job-price" id="" class="inline job-price">
+								<option value="1">$1</option>
+								<option value="2">$2</option>
+								<option value="3">$3</option>
+								<option value="4">$4</option>
+								<option value="5">$5</option>
+							</select>
+							<input type="submit" class="inline btn btn-sec btn-small" value="Contine  &raquo;">
+						</form>
+					</div>
+				</section><hr />
+			</div>
+			
+			<!--End of home job post -->
+			
+			<!--Jobs listing section-->
+			<section class="job-posts">
+				<!-- loop over this for job post-->
+				<div class="col-md-3 col-sm-4">
+					<div class="job-wraper border-wraper">
+						<!-- post images for display can be resized to 300/198 px -->
+						<a href="#link to job">
+							<img src="images/image1.jpg" alt="job title">
+						</a>
+						<div class="meta-wraper clearfix">
+							<span class="rating">
+								<!--add a rated number class to change background-->
+							</span>
+							<span class="price text-right">
+								$5
+							</span>
+						</div>
+						<a href="#link to job"><h4 class="title">I will Build a website for you in a week</h4></a>
+						<div class="job-meta">
+							<p>By: <a href="#to profile" class="link">Gideon</a></p>
+							<p>In: <a href="#link to category">Website Design</a> 3days ago</p>
+						</div>
+					</div>
+				</div>
+				<!--Loop end-->
+				<div class="col-md-3 col-sm-4">
+					<div class="job-wraper border-wrape">
+						<!-- post images for display can be resized to 300/198 px -->
+						<a href="#link to job">
+							<img src="images/image1.jpg" alt="job title">
+						</a>
+						<div class="meta-wraper clearfix">
+							<span class="rating">
+								<!--add a rated number class to change background-->
+							</span>
+							<span class="price text-right">
+								$5
+							</span>
+						</div>
+						<a href="#link to job"><h4 class="title">I will Build a website for you in a week</h4></a>
+						<div class="job-meta">
+							<p>By: <a href="#to profile" class="link">Gideon</a></p>
+							<p>In: <a href="#link to category">Website Design</a> 3days ago</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="job-wraper border-wrape">
+						<!-- post images for display can be resized to 300/198 px -->
+						<a href="#link to job">
+							<img src="images/image1.jpg" alt="job title">
+						</a>
+						<div class="meta-wraper clearfix">
+							<span class="rating">
+								<!--add a rated number class to change background-->
+							</span>
+							<span class="price text-right">
+								$5
+							</span>
+						</div>
+						<a href="#link to job"><h4 class="title">I will Build a website for you in a week</h4></a>
+						<div class="job-meta">
+							<p>By: <a href="#to profile" class="link">Gideon</a></p>
+							<p>In: <a href="#link to category">Website Design</a> 3days ago</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="job-wraper border-wrape">
+						<!-- post images for display can be resized to 300/198 px -->
+						<a href="#link to job">
+							<img src="images/image1.jpg" alt="job title">
+						</a>
+						<div class="meta-wraper clearfix">
+							<span class="rating">
+								<!--add a rated number class to change background-->
+							</span>
+							<span class="price text-right">
+								$5
+							</span>
+						</div>
+						<a href="#link to job"><h4 class="title">I will Build a website for you in a week</h4></a>
+						<div class="job-meta">
+							<p>By: <a href="#to profile" class="link">Gideon</a></p>
+							<p>In: <a href="#link to category">Website Design</a> 3days ago</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<div class="job-wraper border-wrape">
+						<!-- post images for display can be resized to 300/198 px -->
+						<a href="#link to job">
+							<img src="images/image1.jpg" alt="job title">
+						</a>
+						<div class="meta-wraper clearfix">
+							<span class="rating">
+								<!--add a rated number class to change background-->
+							</span>
+							<span class="price text-right">
+								$5
+							</span>
+						</div>
+						<a href="#link to job"><h4 class="title">I will Build a website for you in a week</h4></a>
+						<div class="job-meta">
+							<p>By: <a href="#to profile" class="link">Gideon</a></p>
+							<p>In: <a href="#link to category">Website Design</a> 3days ago</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--End jobs listing section-->
+
+			<!-- bottom navigation -->
+			<div class="bottom-nav">
+				<div class="col-md-12">
+					<!--Here-->
+				</div>
+			</div>
+			<!-- end bottom navigation -->
+		</div>
+	</div>
+	<!-- End Main Section -->
+
+	<!--footer content -->
+	<footer class="footer-wraper">
+		<div class="container">
+			<div class="row">
+				<!--footer here -->
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
